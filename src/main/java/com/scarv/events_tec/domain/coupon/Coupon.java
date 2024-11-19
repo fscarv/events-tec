@@ -19,10 +19,10 @@ import java.util.UUID;
 public class Coupon {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue
   private UUID id;
   private String code;
-  private String discount;
+  private Integer discount;
   private Date valid;
 
   @ManyToOne
